@@ -7,6 +7,8 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -14,54 +16,60 @@
   <link rel="stylesheet" href="css.css">
 </head>
 
-<body>
-  <section  >
-    <div  >
-      <div >
-        <h4>Bill</h4>
-        <div>
+<body class="flex justify-center  flex-col items-center h-screen bg-cyan-100">
+  <h1 style="letter-spacing: 4px;" class=" mb-24 mt-12 text-green-700 font-bold ">SPLI<br>TTER</h1>
+
+  <section class="  flex p-4 gap-x-8 bg-white rounded-xl">
+    <div>
+      <div>
+        <h4 class="font-semibold">Bill</h4>
+        <div class="flex justify-between bg-gray-200 p-2 rounded-lg ">
           <p>$</p>
           <p>0</p>
         </div>
 
       </div>
-      <div>
-        <h4>select tip %</h4>
-        <div>
-          <button>5%</button>
-          <button>10%</button>
-          <button>60%</button>
-          <button>0%</button>
-          <button>10%</button>
-          <button>costum</button>
+      <div class="mt-8">
+        <h4 class="font-semibold">select tip %</h4>
+        <div class="mt-2">
+          <div>
+            <button class="bg-green-800 text-white px-8 py-1 rounded font-semibold">5%</button>
+            <button class="bg-green-800 text-white px-8 py-1 rounded font-semibold">10%</button>
+            <button class="bg-green-400 text-black  px-8 py-1 rounded font-semibold">60%</button>
+          </div>
+          <div class="mt-2">
+            <button class="bg-green-800 text-white px-8 py-1 rounded font-semibold">0%</button>
+            <button class="bg-green-800 text-white px-8 py-1 rounded font-semibold">10%</button>
+            <button class="bg-gray-200 text-black px-2 py-1 rounded font-semibold w-24">costom</button>
+          </div>
         </div>
       </div>
-      <div>
-        <h4>number of pepole</h4>
-        <div>
+      <div class="mt-8" > 
+        <h4 class="font-semibold">Number of pepole</h4>
+        <div class="flex justify-between bg-gray-200 p-2 rounded-lg ">
           <p>p</p>
           <p>0</p>
         </div>
 
       </div>
     </div>
-  <div  >
-      <div>
+    <div class="bg-green-800 w-80 rounded-lg">
+      <div class="flex justify-between px-8 mt-10" >
         <div>
-          <h4>tip amont</h4>
-          <p>/person</p>
+          <h4 class="text-white text-lg font-semibold">Tip Amont</h4>
+          <p class="text-gray-100" >/person</p>
         </div>
-        <h1>$0.00</h1>
+        <h1 class="text-3xl font-bold text-green-400">$0.00</h1>
       </div>
-      <div>
+      <div class="flex justify-between px-8 mt-10" >
         <div>
-          <h4>total</h4>
-          <p>/person</p>
+          <h4 class="text-white text-lg font-semibold">Total</h4>
+          <p class="text-gray-100" >/person</p>
         </div>
-        <h1>$0.00</h1>
+        <h1 class="text-3xl font-bold text-green-400">$45.00</h1>
       </div>
-      <div>
-        <button>Reset</button>
+      <div class="mt-24 flex justify-center">
+        <button class="bg-green-400 w-4/5 mb-4 py-2 rounded-lg font-semibold uppercase" >Reset</button>
       </div>
     </div>
   </section>
